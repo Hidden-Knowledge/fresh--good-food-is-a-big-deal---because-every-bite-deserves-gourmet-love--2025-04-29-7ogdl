@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugga Mamaz Sweetz - Luxury Event Catering</title>
     <meta name="description" content="Luxury Event Catering for Cleveland's Finest Affairs - Fresh, Good Food Is a Big Deal">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,20 +26,28 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/" class="text-2xl font-bold">Sugga Mamaz</a>
+                <a href="https://Hidden-Knowledge.github.io/fresh--good-food-is-a-big-deal---because-every-bite-deserves-gourmet-love--2025-04-29-7ogdl" class="text-2xl font-bold hover:text-gray-700 transition-colors duration-300">Sugga Mamaz</a>
             </div>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#menu" class="hover:text-gray-600 transition-colors duration-300">Menu</a>
                 <a href="#services" class="hover:text-gray-600 transition-colors duration-300">Services</a>
+                <a href="#about" class="hover:text-gray-600 transition-colors duration-300">About</a>
                 <a href="#contact" class="hover:text-gray-600 transition-colors duration-300">Contact</a>
                 <a href="https://stripe.com/suggarmamazsweetz" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
                     Order Now
                 </a>
             </div>
-            <button class="md:hidden">
+            <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#menu" class="block px-4 py-2 hover:bg-gray-100">Menu</a>
+            <a href="#services" class="block px-4 py-2 hover:bg-gray-100">Services</a>
+            <a href="#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+            <a href="https://stripe.com/suggarmamazsweetz" class="block px-4 py-2 hover:bg-gray-100">Order Now</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -53,8 +69,23 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Sugga Mamaz</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <p class="text-gray-600 leading-relaxed">
+                    Founded in 2018, Sugga Mamaz Sweetz began as a passion project between two lifelong friends who shared a vision of bringing gourmet catering experiences to Cleveland's most discerning clientele. What started in a small kitchen has grown into one of the city's most sought-after luxury catering services.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Our mission is to create unforgettable culinary experiences that exceed expectations and bring people together. We believe in using only the finest ingredients, supporting local producers, and maintaining sustainable practices while delivering exceptional service that turns every event into a masterpiece.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section class="py-24 bg-white">
+    <section class="py-24 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Signature Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -62,82 +93,136 @@
                     <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-star text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Exclusive</h3>
-                    <p class="text-gray-600">Curated experiences for discerning tastes</p>
+                    <h3 class="text-xl font-bold mb-4">Exclusive Experience</h3>
+                    <p class="text-gray-600">Curated dining experiences tailored to your unique preferences and style, ensuring every event is truly exceptional.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                     <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-hands text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Hand-Crafted</h3>
-                    <p class="text-gray-600">Artisanal preparation with premium ingredients</p>
+                    <h3 class="text-xl font-bold mb-4">Hand-Crafted Perfection</h3>
+                    <p class="text-gray-600">Every dish is meticulously prepared by our expert chefs using premium ingredients and time-honored techniques.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                     <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-heart text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Unforgettable</h3>
-                    <p class="text-gray-600">Creating lasting memories through exceptional food</p>
+                    <h3 class="text-xl font-bold mb-4">Unforgettable Moments</h3>
+                    <p class="text-gray-600">Creating lasting memories through exceptional food presentation and unparalleled service quality.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <!-- Benefit 1 -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
-                    <h2 class="text-3xl font-bold mb-6">Tailored Custom Menus</h2>
-                    <p class="text-gray-600 mb-8">Experience personalized culinary excellence with our custom menu creation service, tailored to your exact preferences and dietary requirements.</p>
-                    <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300">Learn More</a>
+                    <h2 class="text-3xl font-bold mb-6">Custom Culinary Experiences</h2>
+                    <p class="text-gray-600 mb-8">Experience the epitome of personalized dining with our bespoke menu creation service. Our expert chefs work closely with you to craft a menu that perfectly aligns with your event's theme, dietary requirements, and personal preferences. From intimate gatherings to grand celebrations, we ensure every detail is thoughtfully curated.</p>
+                    <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">Learn More</a>
                 </div>
                 <div class="order-1 md:order-2">
-                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Custom Menus" class="rounded-xl shadow-lg w-full">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Custom Menus" class="rounded-xl shadow-lg w-full hover:shadow-xl transition-all duration-300">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefit 2 -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Elegant Presentation" class="rounded-xl shadow-lg w-full">
+                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Elegant Presentation" class="rounded-xl shadow-lg w-full hover:shadow-xl transition-all duration-300">
                 </div>
                 <div>
-                    <h2 class="text-3xl font-bold mb-6">Elegant Food Presentation</h2>
-                    <p class="text-gray-600 mb-8">Every dish is a masterpiece, carefully crafted and presented to create an unforgettable visual and culinary experience.</p>
-                    <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300">Discover More</a>
+                    <h2 class="text-3xl font-bold mb-6">Artisanal Presentation</h2>
+                    <p class="text-gray-600 mb-8">Our culinary artists transform each plate into a stunning visual masterpiece. Using innovative techniques and artistic flair, we create displays that captivate your guests before they take their first bite. Every element is carefully considered, from color composition to garnish placement, ensuring a feast for both the eyes and palate.</p>
+                    <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">Discover More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefit 3 -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
-                    <h2 class="text-3xl font-bold mb-6">Handcrafted Excellence</h2>
-                    <p class="text-gray-600 mb-8">Each dish is lovingly prepared by our expert chefs, ensuring the highest quality and attention to detail in every bite.</p>
-                    <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300">Experience Now</a>
+                    <h2 class="text-3xl font-bold mb-6">Premium Service Excellence</h2>
+                    <p class="text-gray-600 mb-8">Experience unparalleled service with our dedicated team of hospitality professionals. From the initial consultation to the final moments of your event, we maintain the highest standards of service excellence. Our staff is trained in the fine art of anticipatory service, ensuring your guests' needs are met before they arise.</p>
+                    <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">Experience Now</a>
                 </div>
                 <div class="order-1 md:order-2">
-                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Handcrafted Food" class="rounded-xl shadow-lg w-full">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Premium Service" class="rounded-xl shadow-lg w-full hover:shadow-xl transition-all duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Absolutely outstanding service! The attention to detail in both food preparation and presentation was exceptional. Our wedding guests are still talking about the menu."</p>
+                    <p class="font-bold">Sarah Johnson</p>
+                    <p class="text-sm text-gray-500">Recent Bride</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The team at Sugga Mamaz went above and beyond for our corporate event. Their professionalism and flexibility made planning effortless."</p>
+                    <p class="font-bold">Michael Chen</p>
+                    <p class="text-sm text-gray-500">Director of Events, Tech Corp</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Their custom menu creation process is incredible. They took all our preferences into account and created a perfect blend of flavors."</p>
+                    <p class="font-bold">Emily Rodriguez</p>
+                    <p class="text-sm text-gray-500">Private Event Host</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The presentation was stunning and the taste was even better. Worth every penny for our anniversary celebration."</p>
+                    <p class="font-bold">David Thompson</p>
+                    <p class="text-sm text-gray-500">Anniversary Celebration</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 bg-gray-50">
+    <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                <div class="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
                     <button class="w-full text-left px-6 py-4 focus:outline-none">
                         <div class="flex justify-between items-center">
                             <h3 class="text-lg font-semibold">What areas do you serve?</h3>
@@ -145,19 +230,54 @@
                         </div>
                     </button>
                     <div class="hidden px-6 pb-4">
-                        <p class="text-gray-600">We primarily serve the Greater Cleveland area and surrounding regions.</p>
+                        <p class="text-gray-600">We primarily serve the Greater Cleveland area and surrounding regions within a 50-mile radius. For special events, we can arrange service to other locations.</p>
                     </div>
                 </div>
-                <!-- Add more FAQ items as needed -->
+                <div class="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How far in advance should I book?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600">We recommend booking at least 3-6 months in advance for large events and 2-4 weeks for smaller gatherings to ensure availability and proper planning.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Can you accommodate dietary restrictions?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600">Yes, we can accommodate various dietary requirements including vegetarian, vegan, gluten-free, and allergies. Please inform us during the planning phase.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">What is your minimum guest count?</h3>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600">Our minimum guest count is 20 people for standard events. For intimate gatherings, we offer special packages - please inquire for details.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-black text-white">
-        <div class="container mx-auto px-4 text-center">
+    <section class="relative py-24 bg-black text-white">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=900&fit=crop&q=80" alt="Luxury dining experience" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Create Your Perfect Event?</h2>
-            <p class="text-xl mb-12">Let us help you craft an unforgettable culinary experience</p>
+            <p class="text-xl mb-12">Let us help you craft an unforgettable culinary experience that your guests will talk about for years to come.</p>
             <a href="https://stripe.com/suggarmamazsweetz" class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
                 Book Now
             </a>
@@ -171,25 +291,33 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Sugga Mamaz</h3>
                     <p class="text-gray-400">Luxury Event Catering</p>
+                    <p class="text-gray-400 mt-4">Making every occasion special with exceptional culinary experiences.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <p class="text-gray-400">suggamamazsweetz@gmail.com</p>
+                    <p class="text-gray-400 mt-2">Cleveland, OH</p>
+                    <p class="text-gray-400 mt-2">Tel: (216) 555-0123</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Services</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Menu</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="#menu" class="hover:text-white transition-colors duration-300">Menu</a></li>
+                        <li><a href="https://Hidden-Knowledge.github.io/fresh--good-food-is-a-big-deal---because-every-bite-deserves-gourmet-love--2025-04-29-7ogdl/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-gray-400 transition-colors duration-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-gray-400 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-gray-400 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="hover:text-gray-400 transition-colors duration-300"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="hover:text-gray-400 transition-colors duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="hover:text-gray-400 transition-colors duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                    </div>
+                    <div class="space-y-2">
+                        <a href="https://Hidden-Knowledge.github.io/fresh--good-food-is-a-big-deal---because-every-bite-deserves-gourmet-love--2025-04-29-7ogdl/privacy.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <a href="https://Hidden-Knowledge.github.io/fresh--good-food-is-a-big-deal---because-every-bite-deserves-gourmet-love--2025-04-29-7ogdl/terms.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
                     </div>
                 </div>
             </div>
@@ -198,5 +326,48 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion
+            const faqButtons = document.querySelectorAll('.faq button');
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('fa-plus');
+                    icon.classList.toggle('fa-minus');
+                });
+            });
+        });
+    </script>
+</body>
 </body>
 </html>
